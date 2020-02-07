@@ -1,6 +1,9 @@
 package com.example.lotto;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import android.graphics.Color;
+import android.graphics.drawable.GradientDrawable;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.View;
@@ -24,6 +27,8 @@ public class MainActivity extends AppCompatActivity {
     // 按鈕
     private Button btnstart;
     private Button btnstop; // 這顆先隱藏 invisible
+    private Button btnclear; // 預設灰色不能按
+    private GradientDrawable btncolor;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,6 +38,9 @@ public class MainActivity extends AppCompatActivity {
         sb = new StringBuilder();
         btnstart = findViewById(R.id.start);
         btnstop = findViewById(R.id.stop);
+        btnclear = findViewById(R.id.clear);
+        btncolor = (GradientDrawable) btnclear.getBackground();
+        btncolor.setColor(Color.parseColor("#aaaaaa"));
     }
 
     //亂數取六個號碼放進 balllist 裡。
@@ -102,11 +110,23 @@ public class MainActivity extends AppCompatActivity {
         btnstop.setVisibility(view.VISIBLE);
     }
 
-    // Stop 按鈕 , 按下後隱藏，並將 Start 按鈕顯示出來。
+    // Stop 按鈕 , 按下後隱藏，並將 Start 按鈕顯示出來 , Clear 變綠色可按。
     public void Stop(View view) {
         handler.post(stoptask);
         btnstop.setVisibility(view.INVISIBLE);
         btnstart.setVisibility(view.VISIBLE);
+        btnclear.setEnabled(true);
+        btncolor.setColor(Color.parseColor("#3D998D"));
+    }
+
+    // Clear 按鈕 , 按下後清除所有資訊，按鈕變灰色。
+    public void Clear(View view) {
+        for(int i=0;i<6;i++){
+            notv = findViewById(notvids[i]);
+            notv.setText("");
+            notv.setBackgroundResource(R.drawable.cycle02);
+            btncolor.setColor(Color.parseColor("#aaaaaa"));
+        }
     }
 
     ////////////////////////// 下面是內部 class，設定 Runnable 使用 handler 播放與停止。
