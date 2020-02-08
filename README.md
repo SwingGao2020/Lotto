@@ -1,4 +1,7 @@
-# Lotto
+Lotto
+=
 Android practice
---
+
+---
+
 
