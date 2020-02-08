@@ -1,6 +1,6 @@
 Lotto
 =
-主要練習
+##主要練習
 
 * Math.random
 
