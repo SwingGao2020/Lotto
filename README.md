@@ -1,6 +1,9 @@
 Lotto
 =
-Android practice
+主要練習
+
+* Math.random
+
 
 ---
 
