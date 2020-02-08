@@ -1,3 +1,4 @@
 # Lotto
 Android practice
-==
+--
+
