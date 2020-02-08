@@ -1,6 +1,5 @@
 #Lotto
-
----
+=
 Android practice
 
 ---
