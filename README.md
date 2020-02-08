@@ -9,7 +9,7 @@ Android practice
 * Handler
 * Runnable
 <br>
-<br>
+
 ![](https://github.com/SwingGao2020/Lotto/blob/master/preview.jpg)
 
 ---
