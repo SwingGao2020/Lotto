@@ -1,4 +1,4 @@
-Lotto
+Lotto (Android practice)
 =
 Android practice
 
