@@ -5,7 +5,10 @@ Lotto
 
 * Math.random
 * HashSet
-* 
+* Iterator
+* Button invisible
+* Handler
+* Runnable
 
 
 ---
