@@ -1,8 +1,7 @@
-Lotto (Android practice)
+Lotto
 =
 (Android practice)
 -
-Android practice
 
 * Math.random
 * HashSet
