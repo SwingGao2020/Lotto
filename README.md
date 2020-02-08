@@ -1,5 +1,5 @@
-Lotto
-=
+#Lotto
+
 ---
 Android practice
 
