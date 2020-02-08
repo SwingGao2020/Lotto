@@ -8,7 +8,7 @@ Android practice
 * Button invisible
 * Handler
 * Runnable
-
+![](https://github.com/SwingGao2020/Lotto/blob/master/preview.jpg)
 
 ---
 
