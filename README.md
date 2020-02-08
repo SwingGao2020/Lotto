@@ -1,5 +1,5 @@
 Lotto
-
+=
 ---
 Android practice
 
