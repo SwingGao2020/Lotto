@@ -1,6 +1,6 @@
 Lotto
 =
-##主要練習
+Android practice
 
 * Math.random
 
