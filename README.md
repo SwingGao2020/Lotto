@@ -9,5 +9,5 @@ Android practice
 * Runnable
 * Button invisible
 <br>
-<img  src="https://github.com/SwingGao2020/Lotto/blob/master/preview.jpg" width="800p"/>
+<img  src="https://github.com/SwingGao2020/Lotto/blob/master/preview.jpg" width="500"/>
 
