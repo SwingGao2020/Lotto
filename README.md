@@ -13,7 +13,7 @@ Android practice
 <img  src="https://github.com/SwingGao2020/Lotto/blob/master/preview.jpg" width="600"/>
 <br>
 
->>先用亂數跑 42 個整數，取 6 個不重複數放入 HashSet 陣列。
+>>random,put int number in HashSet.
 
 ```java    
     private static int ballnumber; // 亂數取得的號碼
