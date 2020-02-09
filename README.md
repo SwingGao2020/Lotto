@@ -28,7 +28,7 @@ Android practice
         }
     }    
 ```    
->Iterate over a HashSet and set to TextViews.
+>Iterate over a HashSet and set TextViews.
 
 ```java
     private Iterator ball;
@@ -67,6 +67,29 @@ Android practice
         notv.setText(sb);
         notv.setBackgroundResource(R.drawable.cycle);
     }
+```
+>Create class that implements Runnable.
+
+```java
+    private Runnable starttask = new Startno();
+    private Runnable stoptask = new Stopno();
+
+    private class Startno implements Runnable {
+        @Override
+        public void run() {
+            NumberRandom();
+            Display();
+            handler.postDelayed(this, 20); 
+        }
+    }
+
+    private class Stopno implements Runnable {
+        @Override
+        public void run() {
+            handler.removeCallbacks(starttask);
+        }
+    }
+}
 ```
     
 
