@@ -92,7 +92,34 @@ Android practice
 >Button onClick.
 
 ```java
+    private Button btnstart = findViewById(R.id.start);
+    private Button btnstop = findViewById(R.id.stop); // invisible
+    private Button btnclear = findViewById(R.id.clear);
+    private GradientDrawable btncolor = (GradientDrawable) btnclear.getBackground();
+                             btncolor.setColor(Color.parseColor("#aaaaaa"));
+    
+    public void Start(View view) {
+        handler.post(starttask);
+        btnstart.setVisibility(view.INVISIBLE);
+        btnstop.setVisibility(view.VISIBLE);
+    }
 
+    public void Stop(View view) {
+        handler.post(stoptask);
+        btnstop.setVisibility(view.INVISIBLE);
+        btnstart.setVisibility(view.VISIBLE);
+        btnclear.setEnabled(true);
+        btncolor.setColor(Color.parseColor("#3D998D"));
+    }
+
+    public void Clear(View view) {
+        for(int i=0;i<6;i++){
+            notv = findViewById(notvids[i]);
+            notv.setText("");
+            notv.setBackgroundResource(R.drawable.cycle02);
+            btncolor.setColor(Color.parseColor("#aaaaaa"));
+        }
+    }
 
 ```
     
