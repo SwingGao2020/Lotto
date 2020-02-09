@@ -94,7 +94,7 @@ Android practice
 ```java
     private Button btnstart = findViewById(R.id.start);
     private Button btnstop = findViewById(R.id.stop); // invisible
-    private Button btnclear = findViewById(R.id.clear);
+    private Button btnclear = findViewById(R.id.clear); // Enabled(false);
     private GradientDrawable btncolor = (GradientDrawable) btnclear.getBackground();
                              btncolor.setColor(Color.parseColor("#aaaaaa"));
     
