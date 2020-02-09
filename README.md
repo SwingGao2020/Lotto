@@ -68,7 +68,7 @@ Android practice
         notv.setBackgroundResource(R.drawable.cycle);
     }
 ```
->Create class that implements Runnable , then Handler.
+>Create class that implements Runnable , then Handler to post.
 
 ```java
     private Handler handler = new Handler();
