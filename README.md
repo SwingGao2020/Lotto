@@ -18,7 +18,6 @@ Android practice
 ```java    
     private static int ballnumber;
     private static Set balllist;
-    private StringBuilder sb;
     
     public void NumberRandom() {
         balllist.clear();
@@ -29,7 +28,7 @@ Android practice
                 break;
             }
         }
-    }
+    } ```
     
     >>Random 42 (int)numbers and add 6 (int)numbers to HashSet.
     
