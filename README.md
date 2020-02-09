@@ -28,7 +28,8 @@ Android practice
                 break;
             }
         }
-    } ```
+    } 
+    ```
     
     >>Random 42 (int)numbers and add 6 (int)numbers to HashSet.
     
