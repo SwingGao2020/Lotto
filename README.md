@@ -34,7 +34,8 @@ Android practice
     private Iterator ball;
     private static TextView notv;
     private static int notvid;
-    private static int[] notvids = {R.id.ball01, R.id.ball02, R.id.ball03, R.id.ball04, R.id.ball05, R.id.ball06};
+    private static int[] notvids;
+    notvids = {R.id.ball01, R.id.ball02, R.id.ball03, R.id.ball04, R.id.ball05, R.id.ball06};
     private StringBuilder sb = new StringBuilder();
     
     public void Display() {
