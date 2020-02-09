@@ -61,11 +61,8 @@ Android practice
         Object obj = ball.next();
 
         if (obj instanceof Integer) {
-            if ((int) obj < 10) {
-                sb.append("0").append(obj);  
-            } else {
-                sb.append(obj);
-            }
+            if ((int) obj < 10) { sb.append("0").append(obj); } 
+                           else { sb.append(obj); }
         }
         notv.setText(sb);
         notv.setBackgroundResource(R.drawable.cycle);
