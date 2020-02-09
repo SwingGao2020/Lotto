@@ -74,8 +74,7 @@ Android practice
     private Runnable starttask = new Startno();
     private Runnable stoptask = new Stopno();
 
-    private class Startno implements Runnable {
-        @Override
+    private class Startno implements Runnable {        
         public void run() {
             NumberRandom();
             Display();
@@ -83,8 +82,7 @@ Android practice
         }
     }
 
-    private class Stopno implements Runnable {
-        @Override
+    private class Stopno implements Runnable {        
         public void run() {
             handler.removeCallbacks(starttask);
         }
