@@ -30,33 +30,23 @@ Android practice
 ```    
 >
 ```java
-ball = balllist.iterator(); // HashSet 取值要先轉 Iterator，才會出現 next()，才能取值。
-        while (ball.hasNext()) { // 假如還有下一個 (即 ball.hasNext 為 true)，就把下一個印出來。
-            int i = -1;
-            i++;
-            switch (i) {
-                case 0:
-                    notvid = notvids[0];
-                    settvno();
-                case 1:
-                    notvid = notvids[1];
-                    settvno();
-                case 2:
-                    notvid = notvids[2];
-                    settvno();
-                case 3:
-                    notvid = notvids[3];
-                    settvno();
-                case 4:
-                    notvid = notvids[4];
-                    settvno();
-                case 5:
-                    notvid = notvids[5];
-                    settvno();
-                default:
-                    break;
+    public void Display() {
+    ball = balllist.iterator();
+    while (ball.hasNext()) { 
+        int i = -1;
+        i++;
+        switch (i) {
+            case 0: notvid = notvids[0]; settvno();
+            case 1: notvid = notvids[1]; settvno();
+            case 2: notvid = notvids[2]; settvno();
+            case 3: notvid = notvids[3]; settvno();
+            case 4: notvid = notvids[4]; settvno();
+            case 5: notvid = notvids[5]; settvno();
+            default: break;
             }
         }
+    }
+
 ```
     
 
