@@ -13,7 +13,7 @@ Android practice
 <img  src="https://github.com/SwingGao2020/Lotto/blob/master/preview.jpg" width="600"/>
 <br>
 
->Random 42 (int)numbers and add 6 (int)numbers to HashSet.
+>Random 42 numbers and add 6 numbers to HashSet.
 
 ```java    
     private static int ballnumber;
@@ -88,6 +88,6 @@ Android practice
         }
     }
 ```
->Button onClick,Handler class that implements Runnable.
+>Button onClick , Handler class that implements Runnable.
     
 
