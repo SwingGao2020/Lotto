@@ -17,7 +17,7 @@ Android practice
 
 ```java    
     private static int ballnumber;
-    private static Set balllist;
+    private static Set balllist = new HashSet();
     
     public void NumberRandom() {
         balllist.clear();
@@ -28,8 +28,14 @@ Android practice
         }
     }    
 ```    
->
+>Iterate over a HashSet and set to TextViews.
+
 ```java
+    private Iterator ball;
+    private static TextView notv;
+    private static int notvid;
+    private static int[] notvids = {R.id.ball01, R.id.ball02, R.id.ball03, R.id.ball04, R.id.ball05, R.id.ball06};
+    
     public void Display() {
     ball = balllist.iterator();
     while (ball.hasNext()) { 
