@@ -35,6 +35,7 @@ Android practice
     private static TextView notv;
     private static int notvid;
     private static int[] notvids = {R.id.ball01, R.id.ball02, R.id.ball03, R.id.ball04, R.id.ball05, R.id.ball06};
+    private StringBuilder sb = new StringBuilder();
     
     public void Display() {
     ball = balllist.iterator();
@@ -51,8 +52,23 @@ Android practice
             default: break;
             }
         }
-    }
+    }   
+    
+    public void settvno() {
+        sb.delete(0, sb.length());
+        notv = findViewById(notvid);
+        Object obj = ball.next();
 
+        if (obj instanceof Integer) {
+            if ((int) obj < 10) {
+                sb.append("0").append(obj);  
+            } else {
+                sb.append(obj);
+            }
+        }
+        notv.setText(sb);
+        notv.setBackgroundResource(R.drawable.cycle);
+    }
 ```
     
 
