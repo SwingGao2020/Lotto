@@ -24,14 +24,10 @@ Android practice
         while (true) {
             ballnumber = (int) (Math.random() * 42 + 1);
             balllist.add(ballnumber);
-            if (balllist.size() == 6) {
-                break;
-            }
+            if (balllist.size() == 6) break;
         }
-    } 
-    
-    ```
-    
-    >>Random 42 (int)numbers and add 6 (int)numbers to HashSet.
+    }    
+```    
+>>Random 42 (int)numbers and add 6 (int)numbers to HashSet.
     
 
