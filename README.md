@@ -68,9 +68,10 @@ Android practice
         notv.setBackgroundResource(R.drawable.cycle);
     }
 ```
->Create class that implements Runnable.
+>Create class that implements Runnable , then Handler.
 
 ```java
+    private Handler handler = new Handler();
     private Runnable starttask = new Startno();
     private Runnable stoptask = new Stopno();
 
@@ -88,6 +89,11 @@ Android practice
         }
     }
 ```
->Button onClick , Handler class that implements Runnable.
+>Button onClick.
+
+```java
+
+
+```
     
 
